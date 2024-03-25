@@ -1,0 +1,61 @@
+html {
+    height:100%;
+    font-family: sans-serif
+}
+
+body {
+    background: linear-gradient(to bottom , transparent, rgb(133,140,97));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background-color: white;
+    border-radius: 5%;
+    padding: 2rem;
+    font-weight:700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin: 0 auto;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 1em;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    background-color: rgb(134, 105, 85);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+    padding: 0.5rem;
+}
+
+form button: hover {
+    background-color: rgb(133,103,105)
+}
+
+form .errorlist li {
+    list-style-type: none;
+    color: red;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+
+    }
+}

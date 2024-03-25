@@ -1,0 +1,22 @@
+{# To use the base template in this login file, follow the below #}
+
+{% extends "base.html" %}
+
+{#The title #}
+{% block title %}Register{% endblock %}
+
+{#The content #}
+{% block content %}
+<form method="post" action="{% url 'register'%}">
+    {% csrf_token %} {# This is a security tag #}
+
+    {# Render each from in #}
+    {{form.as_p}}
+
+    {# The Register Button #}
+    <button type="submit">Register</button>
+
+    <a href="{%url 'login'%}">Already have an existing account?</a>
+
+</form>
+{% endblock %}
